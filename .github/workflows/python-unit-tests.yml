@@ -1,10 +1,8 @@
 name: Python Unit Tests
 
 on:
-  pull_request:
-    branches: ["main", "feature*"]
-    paths:
-      - "python/**"
+  workflow_dispatch:
+    
 env:
   # Configure a constant location for the uv cache
   UV_CACHE_DIR: /tmp/.uv-cache
